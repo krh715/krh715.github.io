@@ -34,6 +34,90 @@
 </head>
 
 <body>
+    <div id="mydiv1"></div>
+
+    
+
+    <script>
+        "use strict"; // behave like C#
+
+        let v1; //local variable undefined not type safe()
+        var v2; // global variable undefined
+
+        v1 = 20; // number
+        v1 = 'Tom'; // string
+
+        {
+            let v3;
+            v3 = "Jack";
+            console.log(v3);
+        }
+
+
+    </script>
+
+    <script>
+        "use strict";
+        console.log(v1);
+        //console.log(v3);
+
+        v2 = "Tom";
+        v2 = 'Tom';
+
+        let age1 =20;
+        v2 = `Name is ${v2} and age is ${age1}`;
+        console.log(v2);
+        // object
+        v2 = 
+        {
+            name: 'Tom',
+            age:19,
+            grade:96.6,
+        };
+        console.log(v2.grade);
+
+        // array
+        v2 = [19,20,21];
+        console.log(v2.grade);
+        console.log(v2[1]);
+
+        // define function
+        // way 1
+        function getLg(g)
+        {
+            if(g>=60)
+            {
+                return 'Passed';
+            }
+            else
+            {
+                return 'Failed';
+            }
+        }
+
+        // way 2 arrow function
+        v2 = (p1,p2) => {return p1 + p2;};
+
+        console.log(v2(3.6,2));
+
+        // map function: will create another array
+        let arr1 = [50,60,70,46];
+        let arr2 = arr1.map(getLg);
+
+        arr2 = arr1.map( (x) => 
+        {
+            return x+10;
+        } );
+
+        console.log(arr1);
+        console.log(arr2);
+
+
+      
+
+    </script>
+
+
 <img id="img1" src="static/head1.png" style="height: 200px;"/>
 <img id="img2" src="static/a.svg" style="height: 200px;"/>
 <img id="img3" src="static/b.svg" style="height: 200px;"/>
