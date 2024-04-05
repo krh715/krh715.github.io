@@ -2,3 +2,77 @@ body
 {
     margin: 10px;
 }
+
+#maindiv
+{
+    /*background-color: aquamarine;*/
+    width: 1000px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#header
+{
+    /*background-color: lightcoral;*/
+    width: 1000px;
+    height: 100px;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+    justify-content: center;
+}
+#footer
+{
+    width: 1000px;
+    height: 50px;
+    background-color: aliceblue;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+#leftdiv
+{
+    width: 480px;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#rightdiv
+{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+}
+
+#updiv
+{
+    width: 480px;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+}
+
+#downdiv
+{
+    width: 480px;
+    border: 2px solid darkgray;
+    border-radius: 10px;
+}
+
+.title
+{
+    font-size: 20px;
+    font-weight: bold;
+}
+#content1
+{
+    display: flex;
+    flex-direction: row;
+}
